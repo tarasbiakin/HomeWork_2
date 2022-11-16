@@ -5,11 +5,14 @@
 Console.Write("Введите трехзначное число:");
 int sekondNum = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(KillSecondDigit(sekondNum));
+if((sekondNum>99)&&(sekondNum<1000)){
+Console.WriteLine(KillDigit(sekondNum));
 
-int KillSecondDigit(int num)
+int KillDigit(int num)
 {
     int fitstStep = (num / 10)%10;
     int result = fitstStep;
     return result;
 }
+}else
+Console.Write("Вы ввели не трехзначное число:");
