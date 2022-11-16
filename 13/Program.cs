@@ -3,29 +3,19 @@
 //  (целочисленное деление, остаток от деления).
 
 Console.Write("Введите число:");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-if(num1>99){
-Console.WriteLine(KillDigit(num1));
+if ( number>99){
 
-int KillDigit(int num)
-{
-    int fitstStep = (num % 10);
-    int result = fitstStep;
-    return result;
-   }
+
+Console.WriteLine(ThirdDigit(number));
+
+int ThirdDigit(int num)
+        {int result = 0;
+        if (num >99){
+            while (num> 999){num = num / 10;}
+            result = num % 10;}
+            return result;}
 }
-else if(num1>999){
-Console.WriteLine(KillDigit(num1));
-
-int KillDigit(int num)
-{
-    int fitstStep = (num % 100);
-    int result = fitstStep;
-    return result;
-   }
-}
-
-
 else
 Console.Write("Третьей цифры нет ");
