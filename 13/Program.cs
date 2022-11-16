@@ -7,8 +7,12 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if ( number>99){
 
-
 Console.WriteLine(ThirdDigit(number));
+
+}
+else
+
+Console.Write("Третьей цифры нет ");
 
 int ThirdDigit(int num)
         {int result = 0;
@@ -16,6 +20,3 @@ int ThirdDigit(int num)
             while (num> 999){num = num / 10;}
             result = num % 10;}
             return result;}
-}
-else
-Console.Write("Третьей цифры нет ");

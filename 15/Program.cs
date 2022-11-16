@@ -4,9 +4,9 @@ Console.Write("Введите число:");
 int day = Convert.ToInt32(Console.ReadLine());
 
 if ((day<8)&&(day>0)){
-Console.WriteLine(square(day) ? "выходной" : "рабочий");
+Console.WriteLine(Square(day) ? "выходной" : "рабочий");
 
-bool square (int dau1)
+bool Square (int dau1)
 {
     return (day<8)&&(day>5);}
 }

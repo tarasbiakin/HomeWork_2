@@ -14,5 +14,10 @@ int KillDigit(int num)
     int result = fitstStep;
     return result;
 }
+
 }else
-Console.Write("Вы ввели не трехзначное число:");
+Console.Write("Вы ввели не то число:");
+if (sekondNum<0){
+   Console.Write("число отрицательное"); 
+}
+ 
